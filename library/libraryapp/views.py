@@ -2,6 +2,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from libraryapp.models import Book
+def vw_books(request, ):
+    return render(request, "book_list.html", {"books": Book.objects.all()})
 def vw_book2(request,):
     title = "Alice in wonderland"
     author = "Lewis carroll"

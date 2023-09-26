@@ -25,5 +25,6 @@ urlpatterns = [
     path('book/', vw_book),
     path('book2/', vw_book2),
     path('book3/<int:bookid>', vw_book3),
+    path('books/', vw_book3),
 
 ]
