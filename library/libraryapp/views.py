@@ -15,7 +15,7 @@ def vw_book3(request,bookid):
     title = "Alice in wonderland"
     author = "Lewis carroll"
     description = "It is about a girl in a phantasy world"
-    return render(request, "book.html", {"bookid" : bookid,"title" : title, "author" : author, "description" : description})
+    return render(request, "book2.html", {"bookid" : bookid,"title" : title, "author" : author, "description" : description})
 
 
 def vw_home(request):
